@@ -1,0 +1,11 @@
+<h1>Massacre de monstres et de CB</h1>
+<form action="#" method="POST">
+    <input type="text" name="pseudo" placeholder="Pseudo" required>
+    <button>Attaquer</button>
+</form>
+{% if pseudo %}
+<p> {{ pseudo }} a vaincu {{ compteurkill }} monstres !</p>
+<p> {{ liste_monstre_vaincus }} ont succombé aux coups du joueur</p>
+{% endif %}
+
+<p> Les joueurs {{ joueurs }}se sont déjà vaillement</p>
